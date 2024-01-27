@@ -459,6 +459,7 @@ sudo chown -R codespace:codespace myroot
 ***Answer:***
 1. The user and group of the files created in the docker container is both 'root'
 <img src="./images/os2.png" width="70%">
+
     ```bash
     root@e78aa1152e1f:~# nano testMount.txt
     root@e78aa1152e1f:~# ls -l testMount.txt
