@@ -110,7 +110,7 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
    sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
     ```
 3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-```bash
+    ```bash
     @sofea-shazali ➜ /workspaces/OSProject (main) $ df
     Filesystem     1K-blocks     Used Available Use% Mounted on
     overlay         32847680 13636848  17516736  44% /
