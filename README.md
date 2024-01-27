@@ -423,8 +423,14 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)***
+    ```markdown
+    The files inside a container is not persistent because  
+    ```
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** .
+    ```bash
+    Yes.
+    ```
 
 ## Running your own container with persistent storage
 
@@ -450,8 +456,29 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+***Answer:***
+1. The user and group of the files created in the docker container is both 'root'
+<img src="./images/os2.png" width="70%">
+    ```bash
+    root@e78aa1152e1f:~# nano testMount.txt
+    root@e78aa1152e1f:~# ls -l testMount.txt
+    -rw-rw-rw- 1 root root 273 Jan 27 17:03 testMount.txt
+    root@e78aa1152e1f:~# ls -l /root
+    total 4
+    -rw-rw-rw- 1 root root 273 Jan 27 17:03 testMount.txt
+    ```
 
+2.  a. To change the permission to user codespace, we must first create the user
+    ```bash
+    root@e78aa1152e1f:~# sudo adduser codespace
+    ```
+    b. Then, using chown, change the permission of all files inside /root  
+    ```bash
+    root@e78aa1152e1f:~# sudo chown -R codespace:codespace /root to be codespace
+    root@e78aa1152e1f:~# ls -l /root
+    total 4
+    -rw-rw-rw- 1 codespace codespace 273 Jan 27 17:03 testMount.txt
+    ```
 ## You are on your own, create your own static webpage
 
 1. Create a directory called webpage in your host machine
