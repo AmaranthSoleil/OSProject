@@ -23,8 +23,13 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __https://github.com/AmaranthSoleil/OSProject__.
-2. How many files and folders are in this repository. ***(1 mark)*** __2 (Two) (Readme file and images file)__.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
+   
+   -->  https://github.com/AmaranthSoleil/OSProject
+    
+2. How many files and folders are in this repository. ***(1 mark)***
+   
+   --> Two files (Readme file and images folder).
 
 
 ## Exploring github codespaces
@@ -56,9 +61,19 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Ubuntu Linux__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
+    ```markdown
+    Ubuntu Linux
+    ```
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
+    ```markdown
+    1. 8GB RAM, 32GB Disk, 2-Core
+    2. 16GB RAM, 32GB Disk, 4-Core
+    ```
+3. Why must we commit and sync our current work on source control? ***(1 mark)***
+    ```markdown
+    Source control can track changes from each members and identifies conflicts in which two team members may have edited the same piece of code.
+    ```
 
 ## Exploring the Terminal
 
@@ -75,12 +90,12 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)***  
     ```bash
     @AmaranthSoleil ➜ /workspaces/OSProject (main) $ pwd
     /workspaces/OSProject
     ```
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
+2. Run the command **cat /etc/passwd** . ***(1 mark)***  
     ```bash
    @sofea-shazali ➜ /workspaces/OSProject (main) $ cat /etc/passwd
    root:x:0:0:root:/root:/bin/bash
@@ -109,7 +124,7 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
    codespace:x:1000:1000::/home/codespace:/bin/bash
    sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
     ```
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
+3. Run the command **df** . ***(1 mark)***  
     ```bash
     @sofea-shazali ➜ /workspaces/OSProject (main) $ df
     Filesystem     1K-blocks     Used Available Use% Mounted on
@@ -120,7 +135,7 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
     /dev/sdb1       46127956      196  43752184   1% /tmp
     /dev/loop3      32847680 13636848  17516736  44% /workspaces
     ```
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
+4. Run the command **du** . ***(1 mark)***  
     ```bash
     @sofea-shazali ➜ /workspaces/OSProject (main) $ du
     64      ./.git/hooks
@@ -211,12 +226,12 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
     1972    ./images
     4604    .
     ```
-5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
+5. Run the command **ls** . ***(1 mark)***  
     ```bash
     @sofea-shazali ➜ /workspaces/OSProject (main) $ ls
     README.md  images
     ```
-6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
+6. Run the command **ls -asl** . ***(1 mark)***  
     ```bash
     @sofea-shazali ➜ /workspaces/OSProject (main) $ ls -asl
     total 32
@@ -226,14 +241,14 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
     16 -rw-rw-rw-  1 codespace root 16266 Jan 27 14:30 README.md
     4 drwxrwxrwx+ 2 codespace root  4096 Jan 27 14:20 images
     ```
-7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
+7. Run the command **free -h** . ***(1 mark)***  
     ```bash
     @sofea-shazali ➜ /workspaces/OSProject (main) $ free -h
                 total        used        free      shared  buff/cache   available
     Mem:          7.7Gi       1.6Gi       143Mi       1.0Mi       6.0Gi       5.9Gi
     Swap:            0B          0B          0B
     ```
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)***  
     ```bash
     @sofea-shazali ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
     processor       : 0
@@ -293,7 +308,7 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
     power management:
 
     ```
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
+9. Run the command **top** and type **q** to quit. ***(1 mark)***  
     ```bash
     processor       : 1
     vendor_id       : AuthenticAMD
@@ -326,44 +341,45 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
     3192 codespa+  20   0  668352  61412  39168 S   1.0   0.8   0:01.22 node                                                                        
     2532 codespa+  20   0  970772 109520  42368 S   0.3   1.3   0:06.40 node                                                                        
         1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.37 docker-init  
-```
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
-```bash
+        
+10. Run the command **uname -a**. ***(1 mark)*** 
+    ```bash
     @sofea-shazali ➜ /workspaces/OSProject (main) $ uname -a
     Linux codespaces-09917e 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
-```
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-```markdown
+    ```
+
+11. What is the available free memory in the system. ***(1 mark)***  
+    ```markdown
     143Mi
-```
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-```markdown
+    ```
+12. What is the available disk space mounted on /workspace. ***(1 mark)***  
+    ```markdown
     17G
-```
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-```markdown
+    ```
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** " "
+    ```markdown
     Version: 6.2.0-1018-azure    
     Hardware Architecture: x86_64
-```
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-```markdown
-ls: To list the files and directories in a directory.
-ls -asl: An extended form of the ls command that gets a detailed listing that includes hidden files('a'), sizes in blocks('s'), and additional information about each file or directory('l').
-```
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-```markdown
+    ```
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+    ```markdown
+    ls: To list the files and directories in a directory.
+    ls -asl: An extended form of the ls command that gets a detailed listing that includes hidden files('a'), sizes in blocks('s'), and additional information about each file or directory('l').
+    ```
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+    ```markdown
     TLB size: 2560 4K pages
-```
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-```markdown
+    ```
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+    ```markdown
     CPU size: 3185.045 MHz
-```
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.\
-```markdown
-Top: nodejs 
-%CPU: 1.3
-PID: 2598
-```
+    ```
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+    ```markdown
+    Top: nodejs 
+    %CPU: 1.3
+    PID: 2598
+    ```
 
 ## Running your own container instance.
 
@@ -425,11 +441,11 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 1. Are files in the container persistent. Why not?. ***(1 mark)***
     ```markdown
-    The files inside a container is not persistent because  
+    The files inside a container is not persistent because it is stored on a writable container layer. Therefore whenever a container is destroyed, so does the files inside.
     ```
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** .
     ```bash
-    Yes.
+    Yes, we can.
     ```
 
 ## Running your own container with persistent storage
@@ -449,7 +465,7 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** 
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
@@ -469,11 +485,11 @@ sudo chown -R codespace:codespace myroot
     -rw-rw-rw- 1 root root 273 Jan 27 17:03 testMount.txt
     ```
 
-2.  a. To change the permission to user codespace, we must first create the user
+2.  a. To change the permission to user codespace, we must first create the user named 'codespace'
     ```bash
     root@e78aa1152e1f:~# sudo adduser codespace
     ```
-    b. Then, using chown, change the permission of all files inside /root  
+    b. Then, using chown, change the permission of all files inside /root to be codespace
     ```bash
     root@e78aa1152e1f:~# sudo chown -R codespace:codespace /root to be codespace
     root@e78aa1152e1f:~# ls -l /root
@@ -504,19 +520,19 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** 
     ```markdown
     Permission of Folder: drwxrwxrwx+
     User and Group owner: codespace codespace
     ```
 2. What port is the apache web server running. ***(1 mark)***
-```markdown
-Port: 8080
-```
+    ```markdown
+    Port: 80
+    ```
 3. What port is open for http protocol on the host machine? ***(1 mark)***
-```markdown
-Port: 8080
-```
+    ```markdown
+    Port: 8080
+    ```
 
 ## What to submit
 
